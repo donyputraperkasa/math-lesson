@@ -1,37 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📘 Math Lesson — Website Pembelajaran Matematika
 
-## Getting Started
+Proyek ini adalah website pembelajaran matematika berbasis **Next.js** yang dibuat untuk membantu siswa SMP dan SMA memahami konsep matematika secara interaktif. Website ini dirancang agar mudah digunakan baik oleh siswa maupun guru privat.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Fitur Utama
+
+- 📚 Materi pembelajaran interaktif (SMP & SMA)
+- 🧮 Latihan soal dengan hasil otomatis
+- 🎓 Booking kelas privat langsung dengan guru
+- 🧑‍🏫 Profil guru dan testimoni siswa
+- 🌙 Mode gelap dan terang
+- ⚡ Dibangun dengan Next.js + Tailwind CSS
+
+---
+
+## 🧩 Teknologi yang Digunakan
+
+- **Frontend:** Next.js 14, TypeScript, Tailwind CSS
+- **Font:** Geist (optimized dengan `next/font`)
+- **Deployment:** Vercel / Railway / Render
+
+---
+
+## 🛠️ Cara Menjalankan Proyek
+
+Pastikan Node.js telah terpasang di komputer Anda.
+
+1. Clone repository ini:
+   ```bash
+   git clone https://github.com/username/math-lesson.git
+   cd math-lesson
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Jalankan server pengembangan:
+   ```bash
+   npm run dev
+   ```
+
+4. Buka di browser:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🧠 Struktur Folder
+
+```
+math-lesson/
+├── app/
+│   ├── page.tsx          # Halaman utama
+│   ├── lessons/          # Modul pembelajaran matematika
+│   ├── booking/          # Halaman booking kelas
+│   └── components/       # Komponen UI
+├── public/
+├── styles/
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌍 Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Proyek ini dapat dengan mudah di-deploy di platform gratis seperti:
 
-## Learn More
+- [Vercel](https://vercel.com)
+- [Railway](https://railway.app)
+- [Render](https://render.com)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👨‍💻 Pengembang
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dibuat oleh **Dony Putra Perkasa**  
+📍 Kasihan, Bantul, Yogyakarta  
+🧑‍🏫 Berpengalaman sebagai guru privat matematika sejak 2015  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Lisensi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# math-lesson
+Proyek ini bersifat open-source dan tersedia di bawah lisensi **MIT**.
