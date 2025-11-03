@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { CalendarDays } from "lucide-react";
 
 type Day =
     | "Senin"
@@ -81,19 +82,22 @@ export default function ScheduleSection() {
     const times: TimeSlot[] = Object.keys(schedule) as TimeSlot[];
 
     return (
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-orange-50">
         <div className="max-w-6xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold text-blue-700 mb-6">
-            Jadwal Les Privat Mingguan 📅
+            <div className="flex items-center justify-center gap-2 mb-4">
+            <CalendarDays className="w-8 h-8 text-orange-600" />
+            <h2 className="text-3xl font-bold text-orange-700">
+                Jadwal Les Privat Mingguan
             </h2>
-            <p className="text-gray-600 mb-8">
-            Jadwal disesuaikan dengan waktu luang pengajar. 
+            </div>
+            <p className="text-gray-700 mb-8">
+            Jadwal disesuaikan dengan waktu luang pengajar.
             </p>
 
             <div className="overflow-x-auto">
             <table className="w-full border-collapse shadow-md bg-white rounded-xl overflow-hidden">
                 <thead>
-                <tr className="bg-blue-600 text-white text-sm md:text-base">
+                <tr className="bg-orange-600 text-white text-sm md:text-base">
                     <th className="py-3 px-4 text-left">Waktu</th>
                     {days.map((day) => (
                     <th key={day} className="py-3 px-4">
@@ -106,9 +110,9 @@ export default function ScheduleSection() {
                 {times.map((time) => (
                     <tr
                     key={time}
-                    className="border-t hover:bg-blue-50 transition-colors duration-150"
+                    className="border-t hover:bg-orange-50 transition-colors duration-150"
                     >
-                    <td className="py-3 px-4 font-medium bg-gray-100 text-sm md:text-base">
+                    <td className="py-3 px-4 font-medium bg-orange-100 text-sm md:text-base">
                         {time}
                     </td>
                     {days.map((day) => {
@@ -150,8 +154,8 @@ export default function ScheduleSection() {
             </table>
             </div>
 
-            <p className="text-gray-600 mt-6 text-sm md:text-base">
-            🧑‍💻 Jadwal pagi & siang di hari kerja tidak tersedia karena jam kerja.  
+            <p className="text-gray-700 mt-6 text-sm md:text-base">
+            🧑‍💻 Jadwal pagi & siang di hari kerja tidak tersedia karena jam kerja.
             Jadwal fleksibel untuk sore dan akhir pekan ✨
             </p>
         </div>
