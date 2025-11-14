@@ -114,7 +114,7 @@ export default function TeacherModal({ teacher, onClose }: TeacherModalProps) {
                 {/* Last Education */}
                 {teacher.lastEducation && (
                 <p className="text-gray-700">
-                    <span className="font-semibold">S1 Terakhir: </span>
+                    <span className="font-semibold">Pendidikan Terakhir: </span>
                     {teacher.lastEducation}
                 </p>
                 )}

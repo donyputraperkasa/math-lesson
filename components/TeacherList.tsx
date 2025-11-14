@@ -8,7 +8,7 @@ export default function TeacherList() {
     const [selectedTeacher, setSelectedTeacher] = useState<any>(null);
     const teachers = [
         {
-        name: "Dony Putra Perkasa (owner)",
+        name: "Dony Putra Perkasa",
         university: "Universitas Sanata Dharma + REVOU",
         domicile: "Bantul",
         experience: "10 tahun mengajar matematika SD–SMA",
