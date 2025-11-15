@@ -1,6 +1,6 @@
 export default function MapSection() {
     return (
-        <section className="py-16 bg-white text-center relative overflow-hidden">
+        <section className="py-16 bg-white/30 text-center relative overflow-hidden">
         <h2 className="text-2xl font-bold text-orange-700 mb-4">Area Layanan Les Privat</h2>
         <p className="text-gray-700 mb-6">
             Saya melayani les privat di area <strong>Kasihan, Bantul, dan sekitar Yogyakarta</strong>.

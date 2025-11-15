@@ -8,7 +8,7 @@ export default function AboutSection() {
             <div className="max-w-5xl mx-auto px-4 bg-white shadow-md rounded-lg p-8 text-gray-700">
                 <div className="flex justify-center mb-6">
                     <img
-                        src="/dony1.png"
+                        src="/dony-1.png"
                         alt="Foto Dony Putra Perkasa"
                         className="w-36 h-36 rounded-full border-4 border-orange-500 object-cover shadow-md"
                     />

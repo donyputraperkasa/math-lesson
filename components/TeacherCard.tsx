@@ -37,7 +37,7 @@ export default function TeacherCard({
             alt={name || "Teacher photo"}
             width={200}
             height={200}
-            className="rounded-full object-cover mt-6 shadow-md"
+            className="object-cover mt-6"
             />
         </div>
         <div className="p-6 text-center">

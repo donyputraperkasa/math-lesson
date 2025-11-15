@@ -24,14 +24,15 @@ export default function TeacherModal({ teacher, onClose }: TeacherModalProps) {
             {/* Header Image */}
             {teacher.image && (
             <div
-                className="w-full h-56 relative"
+                className="h-70 relative flex justify-center bg-white"
                 style={{ backgroundColor: teacher.bgColor }}
             >
                 <Image
                 src={`/${teacher.image}`}
                 alt={teacher.name}
-                fill
-                style={{ objectFit: "cover" }}
+                width={600}
+                height={600}
+                style={{ objectFit: "contain" }}
                 />
             </div>
             )}

@@ -13,8 +13,8 @@ export default function TeacherList() {
         domicile: "Bantul",
         experience: "10 tahun mengajar matematika SD–SMA",
         description: "Mengajar dengan pendekatan logis dan menyenangkan agar siswa memahami konsep dengan baik.",
-        image: "dony1.png",
-        bgColor: "#8B0000",
+        image: "dony-1.png",
+        bgColor: "#95e1ffff",
         role: "Owner",
         social: {
             instagram: "https://instagram.com/username",
@@ -30,7 +30,7 @@ export default function TeacherList() {
         domicile: "Bantul",
         experience: "7 tahun mengajar fisika dan matematika",
         description: "Mengajarkan konsep sains dengan logika dan contoh kehidupan nyata.",
-        image: "dony1.png",
+        image: "dhani-1.png",
         bgColor: "#FF8C00",
         social: {
             instagram: "https://instagram.com/username",
@@ -46,8 +46,8 @@ export default function TeacherList() {
         domicile: "Yogyakarta",
         experience: "4 tahun mengajar Bahasa Inggris",
         description: "Membantu siswa menguasai grammar dan speaking dengan metode interaktif.",
-        image: "dony1.png",
-        bgColor: "#800000",
+        image: "dina-1.png",
+        bgColor: "#ffff79ff",
         social: {
             instagram: "https://instagram.com/username",
             tiktok: "https://tiktok.com/@username",
