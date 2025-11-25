@@ -7,35 +7,11 @@ export default function PromoSection() {
     const [selectedPromo, setSelectedPromo] = useState<any>(null);
 
     const promos = [
-      // SD
-        {
-            title: "Paket 4x / Bulan (Reguler)",
-            level: "SD",
-            duration: "50-60 menit/sesi",
-            price: "Rp450.000",
-            desc: "Kelas berkelompok kecil, maksimal 3 siswa. Fokus memahami dasar matematika dengan cara menyenangkan.",
-            icon: Users,
-            color: "blue",
-            bgColor: "bg-blue-50",
-            buttonColor: "bg-blue-500 hover:bg-blue-600",
-        },
-        {
-            title: "Paket 4x / Bulan (One-on-One)",
-            level: "SD",
-            duration: "50-60 menit/sesi",
-            price: "Rp200.000",
-            desc: "Kelas privat 1 siswa 1 guru untuk pemahaman konsep dasar yang lebih mendalam.",
-            icon: Star,
-            color: "blue",
-            bgColor: "bg-blue-100",
-            buttonColor: "bg-blue-600 hover:bg-blue-700",
-        },
-        // SMP
         {
             title: "Paket 4x / Bulan (Reguler)",
             level: "SMP",
             duration: "60-90 menit/sesi",
-            price: "Rp600.000",
+            price: "Rp500.000",
             desc: "Kelas maksimal 3 siswa, difokuskan untuk meningkatkan pemahaman dan kemampuan menyelesaikan soal ujian.",
             icon: Users,
             color: "emerald",
@@ -46,7 +22,7 @@ export default function PromoSection() {
             title: "Paket 4x / Bulan (One-on-One)",
             level: "SMP",
             duration: "60-90 menit/sesi",
-            price: "Rp300.000",
+            price: "Rp200.000",
             desc: "Privat personal dengan pembahasan mendalam sesuai kebutuhan akademik siswa.",
             icon: Star,
             color: "emerald",
@@ -58,7 +34,7 @@ export default function PromoSection() {
             title: "Paket 4x / Bulan (Reguler)",
             level: "SMA/K",
             duration: "60-90 menit/sesi",
-            price: "Rp750.000",
+            price: "Rp600.000",
             desc: "Kelas berkelompok kecil (maks 3 siswa) dengan fokus pada persiapan ujian sekolah dan UTBK.",
             icon: BookOpen,
             color: "violet",
@@ -69,7 +45,7 @@ export default function PromoSection() {
             title: "Paket 4x / Bulan (One-on-One)",
             level: "SMA/K",
             duration: "60-90 menit/sesi",
-            price: "Rp350.000",
+            price: "Rp280.000",
             desc: "Kelas intensif 1 guru 1 siswa, cocok untuk siswa kelas akhir atau persiapan UTBK/SNBT.",
             icon: Laptop,
             color: "violet",
