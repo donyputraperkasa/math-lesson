@@ -61,7 +61,7 @@ export default function TeacherList() {
     return (
         <section className="py-16 bg-white/80 min-h-screen">
             <div className="container mx-auto px-6 text-center">
-                <h1 className="text-4xl font-extrabold mb-4 text-[#8B0000]">
+                <h1 className="text-4xl font-extrabold mb-4 text-blue-700">
                     Team Lecture
                 </h1>
                 <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">

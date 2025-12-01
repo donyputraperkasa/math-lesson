@@ -46,24 +46,24 @@ const schedule: Schedule = {
         Rabu: "kerja",
         Kamis: "kerja",
         Jumat: "kerja",
-        Sabtu: "booked",
+        Sabtu: "✅",
         Minggu: "✅",
     },
     "17.00 - 18.30": {
         Senin: "booked",
         Selasa: "✅",
         Rabu: "✅",
-        Kamis: "booked",
-        Jumat: "booked",
+        Kamis: "✅",
+        Jumat: "✅",
         Sabtu: "✅",
         Minggu: "✅",
     },
     "19.00 - 20.30": {
-        Senin: "✅",
+        Senin: "booked",
         Selasa: "✅",
         Rabu: "✅",
         Kamis: "✅",
-        Jumat: "booked",
+        Jumat: "✅",
         Sabtu: "✅",
         Minggu: "booked",
     },
@@ -85,7 +85,7 @@ export default function ScheduleSection() {
         <section className="py-16 bg-transparent backdrop-blur-[1px] relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
-                <CalendarDays className="w-8 h-8 text-orange-600" />
+                <CalendarDays className="w-8 h-8 text-blue-600" />
                 <h2 className="text-3xl font-bold text-gray-900 drop-shadow-sm">
                     Jadwal Les Privat Mingguan
                 </h2>
@@ -97,7 +97,7 @@ export default function ScheduleSection() {
             <div className="overflow-x-auto">
               <table className="w-full border-separate border-spacing-0 bg-white rounded-2xl shadow-lg overflow-hidden">
                 <thead>
-                  <tr className="bg-gradient-to-r from-orange-500 to-amber-400 text-white text-sm md:text-base">
+                  <tr className="bg-gradient-to-r from-blue-600 to-blue-400 text-white text-sm md:text-base">
                     <th className="py-4 px-6 text-left rounded-tl-2xl">Waktu</th>
                     {days.map((day) => (
                       <th key={day} className="py-4 px-6 font-semibold">
@@ -111,10 +111,10 @@ export default function ScheduleSection() {
                     <tr
                       key={time}
                       className={`transition duration-200 ${
-                        index % 2 === 0 ? "bg-amber-50" : "bg-white"
-                      } hover:bg-orange-100`}
+                        index % 2 === 0 ? "bg-blue-50" : "bg-white"
+                      } hover:bg-blue-100`}
                     >
-                      <td className="py-3 px-4 font-semibold bg-amber-100 text-sm md:text-base text-amber-800">
+                      <td className="py-3 px-4 font-semibold bg-blue-100 text-sm md:text-base text-blue-800">
                         {time}
                       </td>
                       {days.map((day) => {

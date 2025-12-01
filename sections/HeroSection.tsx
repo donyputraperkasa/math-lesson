@@ -12,7 +12,7 @@ export default function HeroSection() {
 
             <div className="relative z-10 animate-fade-in">
                 <div className="flex items-center justify-center gap-2 mb-3">
-                    <Sparkles className="w-8 h-8 text-amber-400 animate-pulse" />
+                    <Sparkles className="w-8 h-8 text-white animate-pulse" />
                     <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-md">
                         BELAJAR MATEMATIKA
                     </h1>
@@ -23,9 +23,9 @@ export default function HeroSection() {
                 </p>
 
                 <div className="mb-8">
-                    <span className="font-semibold text-amber-300">berpengalaman | </span>
-                    <span className="font-semibold text-amber-300">bersertifikat pendidik | </span>
-                    <span className="font-semibold text-amber-300"> friendly</span>
+                    <span className="font-semibold text-white">berpengalaman | </span>
+                    <span className="font-semibold text-white">bersertifikat pendidik | </span>
+                    <span className="font-semibold text-white"> friendly</span>
                 </div>
             </div>
         </section>

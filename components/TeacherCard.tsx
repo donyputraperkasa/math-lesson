@@ -47,7 +47,7 @@ export default function TeacherCard({
                     👑 {role}
                 </span>
             )}
-            <p className="text-[#8B0000] font-medium mb-1">{university}</p>
+            <p className="text-blue-700 font-medium mb-1">{university}</p>
             <p className="text-gray-600 mb-2">{domicile}</p>
             <p className="text-sm text-gray-500 mb-3">{experience}</p>
             <p className="text-gray-400">{description}</p>

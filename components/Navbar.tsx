@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Calculator } from "lucide-react";
-import TeamPage from "@/app/team/page";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +17,11 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-orange-200 shadow-sm">
+        <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-blue-200 shadow-sm">
             <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-3 md:py-4">
                 {/* Brand */}
-                <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-orange-700">
-                    <Calculator className="w-6 h-6 text-orange-600" />
+                <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-blue-700">
+                    <Calculator className="w-6 h-6 text-blue-600" />
                     belajar matematika
                 </Link>
 
@@ -36,8 +35,8 @@ export default function Navbar() {
                                 href={item.href}
                                 className={`transition-all px-3 py-1 rounded-md ${
                                     isActive
-                                        ? "bg-orange-500 text-white font-semibold"
-                                        : "hover:text-orange-600 hover:bg-orange-100"
+                                        ? "bg-blue-600 text-white font-semibold"
+                                        : "hover:text-blue-600 hover:bg-blue-100"
                                 }`}
                             >
                                 {item.name}
@@ -47,7 +46,7 @@ export default function Navbar() {
 
                     <a
                         href="/login"
-                        className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg shadow transition-all"
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow transition-all"
                     >
                         Login
                     </a>
@@ -64,7 +63,7 @@ export default function Navbar() {
 
             {/* Menu Mobile */}
             {isOpen && (
-                <div className="md:hidden bg-white border-t border-orange-200 py-3 px-6 flex flex-col space-y-3 text-gray-700">
+                <div className="md:hidden bg-white border-t border-blue-200 py-3 px-6 flex flex-col space-y-3 text-gray-700">
                     {menuItems.map((item) => {
                         const isActive = pathname === item.href;
                         return (
@@ -73,8 +72,8 @@ export default function Navbar() {
                                 href={item.href}
                                 className={`transition-colors px-3 py-1 rounded-md ${
                                     isActive
-                                        ? "bg-orange-100 text-orange-700 font-semibold"
-                                        : "hover:text-orange-600 hover:bg-orange-50"
+                                        ? "bg-blue-100 text-blue-700 font-semibold"
+                                        : "hover:text-blue-600 hover:bg-blue-50"
                                 }`}
                                 onClick={() => setIsOpen(false)}
                             >
@@ -85,7 +84,7 @@ export default function Navbar() {
 
                     <a
                         href="/login"
-                        className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg text-center mt-2 transition-all"
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-center mt-2 transition-all"
                     >
                         Login
                     </a>
