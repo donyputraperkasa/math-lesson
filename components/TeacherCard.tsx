@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { GraduationCap } from "lucide-react";
 
 interface TeacherCardProps {
     name: string;
@@ -29,9 +30,9 @@ export default function TeacherCard({
     return (
         <div
             onClick={onClick}
-            className="cursor-pointer flex flex-col items-center bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl hover:rotate-1"
+            className="cursor-pointer flex flex-col items-center bg-white/30 backdrop-blur-md border border-blue-100 rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:scale-[1.03] hover:-translate-y-1 hover:shadow-blue-200/70 hover:shadow-xl"
         >
-        <div className="w-full flex justify-center" style={{ backgroundColor: bgColor }}>
+        <div className="w-full flex justify-center pt-6 rounded-t-2xl" style={{ backgroundColor: bgColor }}>
             <Image
             src={imagePath}
             alt={name || "Teacher photo"}
@@ -40,17 +41,24 @@ export default function TeacherCard({
             className="object-cover mt-6"
             />
         </div>
-        <div className="p-6 text-center">
-            <h2 className="text-2xl font-bold mb-1">{name}</h2>
+        <div className="p-6 text-center space-y-2">
+            <h2 className="text-2xl font-extrabold text-blue-900">{name}</h2>
             {role && (
-                <span className="inline-flex items-center gap-1 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 shadow">
+                <span className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
                     👑 {role}
                 </span>
             )}
-            <p className="text-blue-700 font-medium mb-1">{university}</p>
+            <div className="text-blue-700 font-semibold space-y-1">
+                {university.split("+").map((item, index) => (
+                    <p key={index} className="flex items-center justify-center gap-2">
+                        <GraduationCap className="h-4 w-4 text-blue-600" />
+                        {item.trim()}
+                    </p>
+                ))}
+            </div>
             <p className="text-gray-600 mb-2">{domicile}</p>
-            <p className="text-sm text-gray-500 mb-3">{experience}</p>
-            <p className="text-gray-400">{description}</p>
+            <p className="text-sm text-gray-600">{experience}</p>
+            <p className="text-gray-700 leading-relaxed">{description}</p>
         </div>
         </div>
     );

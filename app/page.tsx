@@ -2,7 +2,6 @@ import HeroSection from "@/sections/HeroSection";
 import ScheduleSection from "@/sections/ScheduleSection";
 import PromoSection from "@/sections/PromoSection";
 import ReviewSection from "@/sections/ReviewSection";
-import CTASection from "@/sections/CTASection";
 import MapSection from "@/sections/MapSection";
 import Question from "@/components/Question";
 
@@ -29,8 +28,6 @@ export default function HomePage() {
         <PromoSection />
         <div className="" />
         <ReviewSection />
-        <div className="" />
-        <CTASection />
         <div className="" />
         <Question />
         <div className="" />
