@@ -35,9 +35,9 @@ export default function RootLayout({
         <main className="flex-grow">
           {children}
           <SpeedInsights />
-          <Analytics />
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
